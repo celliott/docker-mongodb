@@ -3,7 +3,7 @@
 # docker settings
 MONGODB_PORT ?= 27017
 ENVS = 
-PORTS = -p $(AUTH_TOKEN):27017
+PORTS = -p $(MONGODB_PORT):27017
 CONTAINER = mongodb
 VOLUMES = -v /data/db:/data/db
 
